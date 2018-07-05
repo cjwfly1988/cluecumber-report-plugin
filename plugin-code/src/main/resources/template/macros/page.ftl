@@ -39,14 +39,14 @@ limitations under the License.
     </head>
     <body>
         <@navigation.build links=links />
-    <main role="main" class="container">
-        <div class="cluecumber-template">
-            <div class="pb-2 mt-4 mb-2 border-bottom">
-                <h3>${headline}</h3>
+        <main class="container">
+            <div class="cluecumber-template">
+                <div class="pb-2 mt-4 mb-2 border-bottom">
+                    <h3>${headline}</h3>
+                </div>
+                <#nested>
             </div>
-            <#nested>
-        </div>
-    </main>
+        </main>
         <#include "../snippets/footer.ftl">
         <#include "../snippets/js.ftl">
     </body>
