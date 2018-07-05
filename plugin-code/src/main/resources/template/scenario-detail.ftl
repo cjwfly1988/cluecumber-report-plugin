@@ -52,14 +52,14 @@ limitations under the License.
                         <div class="row row_${before.statusString}">
                             <div class="col-1 text-left">
                                 <span class="text-secondary">
-                                    <nobr>Before</nobr>
+                                    <span style="white-space: nowrap">Before</span>
                                 </span>
                             </div>
                             <div class="col-7 text-left">
                                 <i>${before.glueMethodName}</i>
                             </div>
                             <div class="col-2 text-left">
-                                <nobr>${before.result.returnDurationString()}</nobr>
+                                <span style="white-space: nowrap">${before.result.returnDurationString()}</span>
                             </div>
                             <div class="col-2 text-right">
                                 <@scenario.status step=before/>
@@ -77,7 +77,7 @@ limitations under the License.
                     <#list element.steps as step>
                         <div class="row row_${step.statusString}">
                             <div class="col-1 text-left">
-                                <nobr>Step ${step?counter}</nobr>
+                                <span style="white-space: nowrap">Step ${step?counter}</span>
                             </div>
                             <div class="col-7 text-left">
                                 <span data-toggle="tooltip"
@@ -97,7 +97,7 @@ limitations under the License.
                                 </#if>
                             </div>
                             <div class="col-2 text-left">
-                                <nobr>${step.result.returnDurationString()}</nobr>
+                                <span style="white-space: nowrap">${step.result.returnDurationString()}</span>
                             </div>
                             <div class="col-2 text-right">
                                 <@scenario.status step=step/>
@@ -116,14 +116,14 @@ limitations under the License.
                         <div class="row row_${after.statusString}">
                             <div class="col-1 text-left">
                                 <span class="text-secondary">
-                                    <nobr>After</nobr>
+                                    <span style="white-space: nowrap">After</span>
                                 </span>
                             </div>
                             <div class="col-7 text-left">
                                 <i>${after.glueMethodName}</i>
                             </div>
                             <div class="col-2 text-left">
-                                <nobr>${after.result.returnDurationString()}</nobr>
+                                <span style="white-space: nowrap">${after.result.returnDurationString()}</span>
                             </div>
                             <div class="col-2 text-right">
                                 <@scenario.status step=after/>

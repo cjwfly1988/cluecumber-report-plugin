@@ -65,7 +65,7 @@ limitations under the License.
                                                 </td>
                                                 <td class="text-right"
                                                     data-order="${element.totalDuration}">
-                                                    <nobr>${element.returnTotalDurationString()}</nobr>
+                                                    <span style="white-space: nowrap">${element.returnTotalDurationString()}</span>
                                                 </td>
                                             </tr>
                                         </#if>
