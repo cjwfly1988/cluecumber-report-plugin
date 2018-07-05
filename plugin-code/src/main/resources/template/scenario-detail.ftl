@@ -80,10 +80,9 @@ limitations under the License.
                                 <nobr>Step ${step?counter}</nobr>
                             </div>
                             <div class="col-7 text-left">
-                                <#assign stepName=step.nameWithArguments>
                                 <span data-toggle="tooltip"
                                       title="${step.glueMethodName}">
-                                    ${step.keyword} ${stepName}
+                                    ${step.keyword} ${step.nameWithArguments}
                                 </span>
                                 <#if (step.rows?size > 0) >
                                     <table class="table table-hover table-sm compact">
